@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>循环笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="循环目的重复执行某些语句 循环类型 for循环 while循环 do…while循环">
+  <meta name="description" content="循环目的重复执行某些语句">
 <meta property="og:type" content="article">
 <meta property="og:title" content="循环笔记">
 <meta property="og:url" content="http://example.com/2021/03/21/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="循环目的重复执行某些语句 循环类型 for循环 while循环 do…while循环">
+<meta property="og:description" content="循环目的重复执行某些语句">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/2021/03/21/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/imgs/1.png">
 <meta property="og:image" content="http://example.com/2021/03/21/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/imgs/2.png">
 <meta property="og:image" content="http://example.com/2021/03/21/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/imgs/3.png">
 <meta property="article:published_time" content="2021-03-21T04:00:17.000Z">
-<meta property="article:modified_time" content="2021-03-23T09:33:35.531Z">
+<meta property="article:modified_time" content="2021-03-28T14:28:52.567Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/03/21/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/imgs/1.png">
@@ -179,13 +179,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="循环目的"><a href="#循环目的" class="headerlink" title="循环目的"></a>循环目的</h2><p>重复执行某些语句</p>
+<a id="more"></a>
+
 <h2 id="循环类型"><a href="#循环类型" class="headerlink" title="循环类型"></a>循环类型</h2><ul>
 <li>for循环</li>
 <li>while循环</li>
 <li>do…while循环</li>
 </ul>
-<a id="more"></a>
-
 <h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h3 id="语法结构"><a href="#语法结构" class="headerlink" title="语法结构"></a>语法结构</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>（初始化变量;条件表达式;操作表达式）&#123;</span><br><span class="line">    <span class="comment">//循环语句</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="执行过程"><a href="#执行过程" class="headerlink" title="执行过程"></a>执行过程</h3><ol>
 <li>初始化变量，初始化操作在整个 for 循环只会执行一次。</li>
@@ -196,7 +196,7 @@
 <li>后续跟第二轮一致，直至条件表达式为假，结束整个 for 循环。</li>
 </ol>
 <h3 id="自我总结"><a href="#自我总结" class="headerlink" title="自我总结"></a>自我总结</h3><p>for循环重复相同的代码，不相同的代码，某些相同操作都是计数器i有关</p>
-<h3 id="双重for循环"><a href="#双重for循环" class="headerlink" title="双重for循环"></a>双重for循环</h3><h4 id="语法结构-1"><a href="#语法结构-1" class="headerlink" title="语法结构"></a>语法结构</h4><p>for (外循环的初始; 外循环的条件; 外循环的操作表达式) {<br>    for (内循环的初始; 内循环的条件; 内循环的操作表达式) {<br>       需执行的代码;<br>   }<br>}</p>
+<h3 id="双重for循环"><a href="#双重for循环" class="headerlink" title="双重for循环"></a>双重for循环</h3><h4 id="语法结构-1"><a href="#语法结构-1" class="headerlink" title="语法结构"></a>语法结构</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (外循环的初始; 外循环的条件; 外循环的操作表达式) &#123;</span><br><span class="line">    <span class="keyword">for</span> (内循环的初始; 内循环的条件; 内循环的操作表达式) &#123;  </span><br><span class="line">       需执行的代码;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h4 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h4><ul>
 <li>内层循环可以看做外层循环的语句</li>
 <li>内层循环执行的顺序也要遵循for循环的执行顺序</li>
@@ -205,7 +205,10 @@
 <h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><ul>
 <li>打印五行五列</li>
 </ul>
-<p><img src="imgs/1.png" alt="案例1"></p>
+<img src="imgs/1.png">
+
+<!-- ![案例1](imgs/1.png) -->
+
 <ul>
 <li>打印正三角fi</li>
 </ul>
@@ -319,6 +322,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/03/28/%E6%95%B0%E7%BB%84/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          数组
+        
+      </div>
+    </a>
   
   
     <a href="/2021/01/02/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
