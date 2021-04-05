@@ -23,7 +23,7 @@
 <meta property="og:image" content="http://example.com/2021/04/03/imgs/控制符5.png">
 <meta property="og:image" content="http://example.com/2021/04/03/imgs/控制符6.png">
 <meta property="article:published_time" content="2021-04-03T08:11:09.000Z">
-<meta property="article:modified_time" content="2021-04-05T07:17:06.305Z">
+<meta property="article:modified_time" content="2021-04-05T14:10:30.359Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/04/03/imgs/优先级.png">
@@ -255,8 +255,6 @@
 <li>scanf(“a=%d,b=%d”,&amp;a,&amp;b)<br>正确的输入格式：a=10，b=345<br>注：scanf(“%d%d\n”,&amp;a,&amp;b);这种是错的，不要进行换行</li>
 </ul>
 <h2 id="分数输入的案例"><a href="#分数输入的案例" class="headerlink" title="分数输入的案例"></a>分数输入的案例</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> n,m,i,j;</span><br><span class="line">  <span class="keyword">float</span> x;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;请输入线索\n向北走的路&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>,&amp;x);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;再向东走(n/m):&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d/%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;最后向北走(i/j):&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d/%d&quot;</span>,&amp;i,&amp;j);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;\n请按以下路线行走\n向北走%.2f\n&quot;</span>,x);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;再向东走：%.2f米\n&quot;</span>,x*n/m);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;最后向北走：%.2f米\n&quot;</span>,x*i/j);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p> l</p>
-
       
 
       
