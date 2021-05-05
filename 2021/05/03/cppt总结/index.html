@@ -6,31 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>c语言学习笔记 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="利用&#x2F;，%运算，取出任一个数X的个，百，千，万位数 取个位：x%10 取十位 ：x&#x2F;10%10 取百位 ：x&#x2F;100%10 取千位 ：x&#x2F;1000%10 取万位 ：x&#x2F;10000%10">
+  <meta name="description" content="计算机基础知识计算机系统  冯•诺依曼存储程序工作原理 五大功能部件：运算器、存储器、控制器、输入设备和输出设备 工作原理：（1）采用二进制表示数据和指令（2）采用存储程序控制  数制，基数，位权 数制：n进制 基数：数码的个数（如十进制，其数码有10个：0、1、2、3、4、5、6、7、8、9） 位权：以基数为底、数码所在位置的序号为指数的整数次幂（十进制整数1234，第0位的位权位10的0次方）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c语言学习笔记">
-<meta property="og:url" content="http://example.com/2021/04/03/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/05/03/cppt%E6%80%BB%E7%BB%93/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="利用&#x2F;，%运算，取出任一个数X的个，百，千，万位数 取个位：x%10 取十位 ：x&#x2F;10%10 取百位 ：x&#x2F;100%10 取千位 ：x&#x2F;1000%10 取万位 ：x&#x2F;10000%10">
+<meta property="og:description" content="计算机基础知识计算机系统  冯•诺依曼存储程序工作原理 五大功能部件：运算器、存储器、控制器、输入设备和输出设备 工作原理：（1）采用二进制表示数据和指令（2）采用存储程序控制  数制，基数，位权 数制：n进制 基数：数码的个数（如十进制，其数码有10个：0、1、2、3、4、5、6、7、8、9） 位权：以基数为底、数码所在位置的序号为指数的整数次幂（十进制整数1234，第0位的位权位10的0次方）">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/imgs/优先级.png">
-<meta property="og:image" content="http://example.com/imgs/控制符1.png">
-<meta property="og:image" content="http://example.com/imgs/控制符2.png">
-<meta property="og:image" content="http://example.com/imgs/控制符3.png">
-<meta property="og:image" content="http://example.com/imgs/控制符4.png">
-<meta property="og:image" content="http://example.com/imgs/控制符5.png">
-<meta property="og:image" content="http://example.com/imgs/控制符6.png">
-<meta property="og:image" content="http://example.com/imgs/控制符7.png">
-<meta property="og:image" content="http://example.com/imgs/控制符8.png">
-<meta property="og:image" content="http://example.com/imgs/错误示例.png">
-<meta property="og:image" content="http://example.com/imgs/错误示例.png">
-<meta property="article:published_time" content="2021-04-03T08:11:09.000Z">
-<meta property="article:modified_time" content="2021-04-18T08:30:44.519Z">
+<meta property="og:image" content="http://example.com/imgs/计算机系统.png">
+<meta property="og:image" content="http://example.com/imgs/储存.png">
+<meta property="og:image" content="http://example.com/imgs/常用的格式修饰符.png">
+<meta property="og:image" content="http://example.com/imgs/常用的格式修饰符1.png">
+<meta property="og:image" content="http://example.com/imgs/易错1.png">
+<meta property="og:image" content="http://example.com/imgs/易错2.png">
+<meta property="og:image" content="http://example.com/2021/05/03/cppt%E6%80%BB%E7%BB%93/imgs/if和else的配对.png">
+<meta property="og:image" content="http://example.com/imgs/switch案例.png">
+<meta property="article:published_time" content="2021-05-03T13:40:34.462Z">
+<meta property="article:modified_time" content="2021-05-05T11:22:41.922Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/imgs/优先级.png">
+<meta name="twitter:image" content="http://example.com/imgs/计算机系统.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -166,166 +163,106 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-c语言学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-cppt总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      c语言学习笔记
-    </h1>
-  
-
-        
-        <a href="/2021/04/03/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2021-04-03T08:11:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-03</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="利用-，-运算，取出任一个数X的个，百，千，万位数"><a href="#利用-，-运算，取出任一个数X的个，百，千，万位数" class="headerlink" title="利用/，%运算，取出任一个数X的个，百，千，万位数"></a>利用/，%运算，取出任一个数X的个，百，千，万位数</h2><ul>
-<li>取个位：x%10</li>
-<li>取十位 ：x/10%10</li>
-<li>取百位 ：x/100%10</li>
-<li>取千位 ：x/1000%10</li>
-<li>取万位 ：x/10000%10<a id="more"></a>
+        <h2 id="计算机基础知识"><a href="#计算机基础知识" class="headerlink" title="计算机基础知识"></a>计算机基础知识</h2><h3 id="计算机系统"><a href="#计算机系统" class="headerlink" title="计算机系统"></a>计算机系统</h3><img src="/imgs/计算机系统.png">
 
+<h3 id="冯•诺依曼存储程序工作原理"><a href="#冯•诺依曼存储程序工作原理" class="headerlink" title="冯•诺依曼存储程序工作原理"></a>冯•诺依曼存储程序工作原理</h3><ul>
+<li>五大功能部件：运算器、存储器、控制器、输入设备和输出设备</li>
+<li>工作原理：（1）采用二进制表示数据和指令（2）采用存储程序控制</li>
+</ul>
+<h3 id="数制，基数，位权"><a href="#数制，基数，位权" class="headerlink" title="数制，基数，位权"></a>数制，基数，位权</h3><ul>
+<li>数制：n进制</li>
+<li>基数：数码的个数（如十进制，其数码有10个：0、1、2、3、4、5、6、7、8、9）</li>
+<li>位权：以基数为底、数码所在位置的序号为指数的整数次幂（十进制整数1234，第0位的位权位10的0次方）</li>
+</ul>
+<h3 id="进制之间的转化"><a href="#进制之间的转化" class="headerlink" title="进制之间的转化"></a>进制之间的转化</h3><ul>
+<li>X进制转化成十进制：按权展开法an …a1a0 (X) = anXn + …+ a1X1 + a0X0</li>
+<li>十进制转化成X进制整数部分 除以X逆序取余数，直到商为0，小数部分乘X顺序取整法。</li>
+<li>二进制转八进制<br>  从低位向高位(从右向左)每三位分一组每组用一位八进数表示，不足三位以零补足三位<br>例  1 101 101 110(B)= 1556(O)<pre><code>1  5   5   6</code></pre>
+</li>
+<li>二进制转十六进制<br>  从低位向高位(从右向左)每四位分一组每组用一位十六进制数表示，不足四位以零补足四位。<br> 例<pre><code>      11 0110 1110(B)=36E(H)
+      3     6       E</code></pre>
+</li>
+<li>八进制转二进制:<br>  每一位八进制数用三位二进制数表示。<br>例:       7123(O)=111 001 010 011(B)<pre><code>                      7     1     2     3</code></pre>
+</li>
+<li>十六进制转二进制:<br>每一位十六进制数用四位二进制数表示。<br>例: 2C1D(H)=0010 1100 0001 1101(B)<pre><code>                 2       C      1       D</code></pre>
+(实在是忘记了怎么转化时可以先化为十进制)</li>
+</ul>
+<h3 id="数据的储存"><a href="#数据的储存" class="headerlink" title="数据的储存"></a>数据的储存</h3><ul>
+<li><p>存储容量：描述计算机存储能力的指标。</p>
+<img src="/imgs/储存.png">
+</li>
+<li><p>机器码：一个数及其符号在机器中的表示(用二、八、十六进制表示)</p>
+</li>
+<li><p>真值: 机器码所代表的实际值。(用十进制数表示)</p>
+</li>
+<li><p>有符号整数的储存<br>（1）原码<br>原码就是用最高位表示数的正、负号，0表示非负，1表示负，而数值部分用最高位以后的若干位来表示<br>（2）反码<br>原码变反码的规则为：正数的反码与原码相同；负数的反码是将它的原码除符号位外逐位取反。<br>（3）补码<br>补码的取码原则是：正数的补码和其原码相同；负数的补码是它的原码除符号位外逐位取反（即0变1，1变0），最后在末位加1<br>正数：机器码0000H<del>7fffH,对应的真值0</del>32767(2^15-1)<br>负数：机器码ffffH<del>8000H,对应的真值-1</del>-32768</p>
+</li>
+<li><p>整数是按照其补码来进行储存的</p>
+</li>
+<li><p>无符号整数的存储（假定一个整数占两个字节）<br>16位全部都是数据位<br>存储范围：机器码0000H<del>ffffH,对应的真值    0</del>65535（2^16-1）</p>
 </li>
 </ul>
-<h2 id="交换俩个数的值"><a href="#交换俩个数的值" class="headerlink" title="交换俩个数的值"></a>交换俩个数的值</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a,b,t;</span><br><span class="line">        a=<span class="number">2</span>;b=<span class="number">3</span>;</span><br><span class="line">        t=a;a=b;b=t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="数学函数的使用"><a href="#数学函数的使用" class="headerlink" title="数学函数的使用"></a>数学函数的使用</h2><table>
-<thead>
-<tr>
-<th align="center">c标准函数</th>
-<th align="center">功能</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">cos(x)</td>
-<td align="center">求cos(x)的值</td>
-</tr>
-<tr>
-<td align="center">sin(x)</td>
-<td align="center">求sin(x)的值</td>
-</tr>
-<tr>
-<td align="center">fabs(x)</td>
-<td align="center">求x的绝对值</td>
-</tr>
-<tr>
-<td align="center">exp(x)</td>
-<td align="center">求e^x的绝对值</td>
-</tr>
-<tr>
-<td align="center">log(x)</td>
-<td align="center">求ln(x)</td>
-</tr>
-</tbody></table>
-<h2 id="自增自减于运算符"><a href="#自增自减于运算符" class="headerlink" title="自增自减于运算符"></a>自增自减于运算符</h2><table>
-<thead>
-<tr>
-<th align="center">表达式</th>
-<th align="center">步骤1</th>
-<th align="center">步骤2</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">++i</td>
-<td align="center">i=i+1</td>
-<td align="center">表达式的值=i</td>
-</tr>
-<tr>
-<td align="center">i++</td>
-<td align="center">表达式的值=i</td>
-<td align="center">i=i+</td>
-</tr>
-</tbody></table>
-<p>m=(++i)((++i)的值为i+1)<br>m=(i++)((i++)的值为i)</p>
-<p>注:自增，自减运算符的操作符：变量(5++,(a+1)++都是错的)</p>
-<h2 id="优先级和结合方向"><a href="#优先级和结合方向" class="headerlink" title="优先级和结合方向"></a>优先级和结合方向</h2><img src="/imgs/优先级.png">
-
-<h2 id="复合赋值运算符"><a href="#复合赋值运算符" class="headerlink" title="复合赋值运算符"></a>复合赋值运算符</h2><ul>
-<li>x*=2+3相当于x=x *(2 + 3)</li>
-<li>注：右操作数必须作为一个整体，先与变量的原有值进行计算，结果更新新变量的值</li>
-</ul>
-<h2 id="printf函数格式控制符的综合应用"><a href="#printf函数格式控制符的综合应用" class="headerlink" title="printf函数格式控制符的综合应用"></a>printf函数格式控制符的综合应用</h2><ul>
-<li><img src="/imgs/控制符1.png"></li>
-<li><img src="/imgs/控制符2.png"></li>
-<li><img src="/imgs/控制符3.png"></li>
-<li><img src="/imgs/控制符4.png"></li>
-<li><img src="/imgs/控制符5.png"></li>
-<li><img src="/imgs/控制符6.png"></li>
-<li><img src="/imgs/控制符7.png"></li>
-<li><img src="/imgs/控制符8.png">
-
-</li>
-</ul>
-<h3 id="数据进行对齐的方法"><a href="#数据进行对齐的方法" class="headerlink" title="数据进行对齐的方法"></a>数据进行对齐的方法</h3><ul>
-<li>“\t”</li>
-<li>例：<code>printf(&quot;房型\t房价\n&quot;)</code></li>
-<li>或者用%-md</li>
-</ul>
-<h2 id="格式化输入函数"><a href="#格式化输入函数" class="headerlink" title="格式化输入函数"></a>格式化输入函数</h2><ul>
-<li>scanf(“%d,%d”,&amp;a,&amp;b)<br>正确的输入格式：10，345</li>
-<li>scanf(“a=%d,b=%d”,&amp;a,&amp;b)<br>正确的输入格式：a=10，b=345<br>注：scanf(“%d%d\n”,&amp;a,&amp;b);这种是错的，不要进行换行</li>
-</ul>
-<h3 id="分数输入的案例"><a href="#分数输入的案例" class="headerlink" title="分数输入的案例"></a>分数输入的案例</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> n,m,i,j;</span><br><span class="line">  <span class="keyword">float</span> x;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;请输入线索\n向北走的路&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>,&amp;x);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;再向东走(n/m):&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d/%d&quot;</span>,&amp;n,&amp;m);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;最后向北走(i/j):&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%d/%d&quot;</span>,&amp;i,&amp;j);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;\n请按以下路线行走\n向北走%.2f\n&quot;</span>,x);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;再向东走：%.2f米\n&quot;</span>,x*n/m);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;最后向北走：%.2f米\n&quot;</span>,x*i/j);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="数据截取"><a href="#数据截取" class="headerlink" title="数据截取"></a>数据截取</h3><ul>
-<li>%lf：输入double类型的格式控制符</li>
-<li>%md: 截取m列数据作为输入</li>
-<li>%*md：跳过m列数据，不输入</li>
-</ul>
-<p>例 ：身份证信息的获取</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> x,y,z;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;请输入您的身份证号:\n&quot;</span>);</span><br><span class="line">  <span class="built_in">scanf</span>(<span class="string">&quot;%*6d%4d%2d%2d%*4d&quot;</span>,&amp;x,&amp;y,&amp;z);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;您的出生日期为%d年%d月%d日\n&quot;</span>,x,y,z);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="逻辑表达式"><a href="#逻辑表达式" class="headerlink" title="逻辑表达式"></a>逻辑表达式</h2><h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><p>优先级从高到底：！—&gt;  &amp;&amp; —&gt; ||</p>
-<h3 id="结合性"><a href="#结合性" class="headerlink" title="结合性"></a>结合性</h3><ul>
-<li>左结合：&amp;&amp;，||</li>
-<li>右结合：！</li>
-</ul>
-<p>（混合预算中的优先级：从高到低算术运算符—&gt;关系运算符—&gt;赋值运算符）</p>
-<h3 id="逻辑表达式的短路计算（重要）"><a href="#逻辑表达式的短路计算（重要）" class="headerlink" title="逻辑表达式的短路计算（重要）"></a>逻辑表达式的短路计算（重要）</h3><ul>
-<li>e1 &amp;&amp; e2,如果e2为0，无须计算e2,e2将会被短路</li>
-<li>e1 || e2,如果e1为非0，无须计算e2，e2被短路</li>
-</ul>
-<h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><h3 id="if（i-3）（对的）"><a href="#if（i-3）（对的）" class="headerlink" title="if（i==3）（对的）"></a>if（i==3）（对的）</h3><h3 id="判断一个数是否为回文数"><a href="#判断一个数是否为回文数" class="headerlink" title="判断一个数是否为回文数"></a>判断一个数是否为回文数</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> x,a1,a2,a3,a4;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;请输入一个五位数&quot;</span>);</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line">a1=x/<span class="number">10000</span>%<span class="number">10</span>;</span><br><span class="line">a2=x/<span class="number">1000</span>%<span class="number">10</span>;</span><br><span class="line">a3=x/<span class="number">10</span>%<span class="number">10</span>;</span><br><span class="line">a4=x%<span class="number">10</span>;</span><br><span class="line"><span class="keyword">if</span>(a1==a4&amp;&amp;a2==a3)</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d是回文数\n&quot;</span>,x);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d不是回文数\n&quot;</span>,x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="else的配对问题"><a href="#else的配对问题" class="headerlink" title="else的配对问题"></a>else的配对问题</h3><ul>
-<li>else与其前面最近的”未配对的if”进行匹配</li>
-</ul>
-<h3 id="判断否位闰年"><a href="#判断否位闰年" class="headerlink" title="判断否位闰年"></a>判断否位闰年</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> x,flag;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;请输入年份：\n&quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;x);</span><br><span class="line"><span class="keyword">if</span>(x%<span class="number">4</span>==<span class="number">0</span>&amp;&amp;x%<span class="number">100</span>!=<span class="number">0</span>||x%<span class="number">400</span>==<span class="number">0</span>)</span><br><span class="line"> flag=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line"> flag=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">if</span>(flag==<span class="number">1</span>)</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d是闰年\n&quot;</span>,x);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;%d不是闰年\n&quot;</span>,x);</span><br></pre></td></tr></table></figure>
-<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><ul>
-<li>case起标号作用，每个case后面的常量表达式的值各不相同</li>
-<li>根据表达式转向不同的case标号位置，执行相应的语句序列</li>
-<li>遇到break，退出switch语句</li>
-<li>案例</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> year,month,day;</span><br><span class="line">    <span class="keyword">int</span> total = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d,%d,%d&quot;</span>,&amp;month,&amp;day,&amp;year);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span>(month)&#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">12</span>: total += <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">11</span>: total += <span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">10</span>: total +=<span class="number">30</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">9</span>:  total +=<span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">8</span>:  total +=<span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">7</span>:  total +=<span class="number">30</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">6</span>:  total +=<span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">5</span>:  total +=<span class="number">30</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">4</span>:  total +=<span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">3</span>: &#123;</span><br><span class="line">            <span class="keyword">if</span>(year % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span> || year % <span class="number">400</span> == <span class="number">0</span>)) total+=<span class="number">29</span>;</span><br><span class="line">            <span class="keyword">else</span> total+=<span class="number">28</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:  total += <span class="number">31</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:  total += day;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;这是今年的第%d天&quot;</span>,total)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a>顺序结构</h2><p>-从计算机向外部输出设备(如显示屏、打印机、磁盘等)输出数据称为“输出” ;从外部向输入设备(如键盘、磁盘、光盘、扫描仪等)输入数据称为“输入”。</p>
 <ul>
-<li>每个分支的语句序列不使用break语句，巧妙进行累加计算</li>
+<li><p>%e以指数形式输出浮点型数据<br>例如： float m=123.4567891;<br>printf(“%e”,m);<br>其输出结果为:1.23457e+02(四舍五入)</p>
+</li>
+<li><p>%g 以%e,%f中输出占较少位的形式输出浮点型数据（很少用）<br>例如： float a=567.789;printf(“%g”,a);<br>(%g根据结果自动选择科学记数法还是一般的小数记数法，对于指数小于-4或者大于给定精度的数值，按照%e的控制输出，否则按照%f的控制输出)</p>
+</li>
+<li><p>输出%:%%</p>
+</li>
+<li><p>printf常用的格式修饰符</p>
+<img src="/imgs/常用的格式修饰符.png">
+</li>
+<li><p>scanf常用的格式修饰符</p>
+<img src="/imgs/常用的格式修饰符1.png">
+</li>
+<li><p>scanf的注意事项：</p>
+</li>
 </ul>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ul>
-<li>在switch语句中合理使用break,能表达不同执行流程</li>
-<li>能使用switch的场合也可使用if语句</li>
-<li>在使用if的地方使用switch，要看是否满足switch语句中表达式的条件</li>
-</ul>
-<h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><ul>
-<li>例：找符合要求的数</li>
-</ul>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,x,a,c;</span><br><span class="line">	<span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">100</span>;i&lt;=<span class="number">999</span>;i++)&#123;</span><br><span class="line">		a=i/<span class="number">100</span>%<span class="number">10</span>;</span><br><span class="line">		c=i%<span class="number">10</span>;</span><br><span class="line">		x=a+c;</span><br><span class="line">		<span class="keyword">if</span>(x==<span class="number">9</span>)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;%7d&quot;</span>,i);</span><br><span class="line">			count++;</span><br><span class="line">			<span class="keyword">if</span>(count%<span class="number">8</span>==<span class="number">0</span>)&#123;</span><br><span class="line">				<span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>1.输入多个单字符时，字符中间不能有空格<br>2.格式控制字符串中无任何普通字符，如：<br>             scanf(“%d%d%d”, &amp;a, &amp;b, &amp;c);<br>    这时输入数据之间用空格(或Tab、回车)分开：<br>              34 58 100<br>6、格式控制字符串中无任何普通字符，且相邻的两个格式控制字符并且后一个是%C时，中间不能加任何分隔符<br>例如<br>     scanf(“%d%c%d%c%f”,&amp;a,&amp;c1,&amp;b,&amp;c2,&amp;x)<br>                1a2b3.4</p>
 <ul>
-<li>错误写法<img src="/imgs/错误示例.png">
+<li><img  src="/imgs/易错1.png">
+<img  src="/imgs/易错2.png">
+
 
 </li>
 </ul>
-<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><ul>
-<li>在给定范围的整数中找到符合要求的数，可以用for循环来实现</li>
-<li>“每行n个”——用变量count计数</li>
-<li>“每个数据之间有一定的距离”——用%md来进行实现</li>
-<li>易错案列<img src="/imgs/错误示例.png"></li>
+<h2 id="选择结构"><a href="#选择结构" class="headerlink" title="选择结构"></a>选择结构</h2><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>注意区分：a==3与3==a（建议用，便于找错误）</li>
+<li>应避免对实数作相等或不等的判断 如</li>
 </ul>
+<p>1.0/3.0<em>3.0==1.0<br>可改写为：fabs(1.0/3.0</em>3.0-1.0)&lt;1e-6 </p>
+<ul>
+<li>要注意到短路后后面将不会被执行</li>
+<li>else始终与它上面的最近的if语句配对，而这个if语句又没有其它的else与之匹配 <img src="imgs/if和else的配对.png"></li>
+<li>为了强制匹配，可以增加{}或书写所有的else</li>
+</ul>
+<h3 id="表达式练习"><a href="#表达式练习" class="headerlink" title="表达式练习"></a>表达式练习</h3><ul>
+<li>判断整数x是否为偶数或奇数<br>x%2==0             x%2 != 0  (x%2) </li>
+<li>能被3整除但不能被5整除的数<br>x%3==0 &amp;&amp; x%5</li>
+<li>判断一个字符是否为字母<br>(‘A’&lt;=ch &amp;&amp; ch&lt;= ‘Z’)||(‘a’&lt;=ch &amp;&amp; ch&lt;= ‘z’)</li>
+<li>判断一个字符是否为空格字符<br>ch==””</li>
+<li>year%4==0&amp;&amp;year%100!=0||year%400==0可以等价于!(year%4)&amp;&amp;year%100||!(year%400)</li>
+</ul>
+<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><h3 id="expr1-expr2-expr3"><a href="#expr1-expr2-expr3" class="headerlink" title="expr1?expr2:expr3"></a>expr1?expr2:expr3</h3><ul>
+<li>执行过程：先求解表达式1的值，如果表达式1的值为非0(真)，则求解表达式2的值，且整个条件表达式的值为表达式2的值；否则，求解表达式3的值，且整个条件表达式的值为表达式3的值。</li>
+<li>优先级:  13   高于赋值运算符</li>
+<li>结合性：自右向左</li>
+<li>表达式2与表达式3的类型也可以不一致,此时条件表达式的值自动向类型较高的转换</li>
+</ul>
+<h3 id="switch-case"><a href="#switch-case" class="headerlink" title="switch case"></a>switch case</h3><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>case后面必须接的是常量表达式</li>
+<li>case后面的语句不需要用{}括起来</li>
+<li>执行步骤:计算switch语句表达式的值,依次与1—n个常量做比较，当表达式的值与常量相等时，执行case后的语句遇break结束switch语句,如无匹配的case值时，则执行default相应语句</li>
+</ul>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><img src="/imgs/switch案例.png">
 
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> score;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;请输入学生的成绩:&quot;</span>);</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;score);</span><br><span class="line">	<span class="keyword">if</span>(score&lt;<span class="number">0</span>||score&gt;<span class="number">100</span>)</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;the score is err&quot;</span>);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		<span class="keyword">switch</span>((<span class="keyword">int</span>)(score/<span class="number">10</span>))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">10</span>:</span><br><span class="line">		<span class="keyword">case</span> <span class="number">9</span>:</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;the grade is A&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">8</span>:</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;the grade is B&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;the grade is C&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">&quot;the grade is D&quot;</span>);</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">default</span>:<span class="built_in">printf</span>(<span class="string">&quot;the grade is E&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -404,7 +341,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/03/c%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/03/cppt%E6%80%BB%E7%BB%93/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -418,18 +355,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/18/cppt%E6%80%BB%E7%BB%931/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/03/28/%E6%95%B0%E7%BB%84/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数组</div>
+    <a href="/2021/05/03/cppt%E6%80%BB%E7%BB%932/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
